@@ -1,0 +1,12 @@
+export const metadata = {
+  title: "Jogo de Dados",
+  description: "Jogo de dados entre 2 jogadores em 5 rodadas",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="pt-BR">
+      <body style={{ margin: 0, background: "#fafafa" }}>{children}</body>
+    </html>
+  );
+}
