@@ -1,22 +1,14 @@
-import styles from "./Dado.module.css";
+type DadoProps = {
+  valor: number;
+};
 
-export default function Dado({ valor }) {
-  if (!valor) {
-    return (
-      <div className={`${styles.dado} ${styles.vazio}`}>
-        <span>?</span>
-      </div>
-    );
-  }
-
+export default function Dado({ valor }: DadoProps) {
   return (
-    <div className={styles.dado}>
-      <img
-        src={`/public/dice/${valor}.png`.replace(".png", ".svg")}
-        alt={`Dado com valor ${valor}`}
-        width={70}
-        height={70}
-      />
-    </div>
+    <img
+      src={`/dados/${valor}.svg`}
+      alt={`Dado mostrando ${valor}`}
+      width={70}
+      height={70}
+    />
   );
 }
