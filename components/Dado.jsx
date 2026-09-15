@@ -12,7 +12,7 @@ export default function Dado({ valor }) {
   return (
     <div className={styles.dado}>
       <img
-        src={`/dice/${valor}.png`.replace(".png", ".svg")}
+        src={`/public/dice/${valor}.png`.replace(".png", ".svg")}
         alt={`Dado com valor ${valor}`}
         width={70}
         height={70}
