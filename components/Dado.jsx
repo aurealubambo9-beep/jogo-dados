@@ -1,14 +1,10 @@
-type DadoProps = {
-  valor: number;
-};
-
-export default function Dado({ valor }: DadoProps) {
+export default function Dado({ valor }) {
   return (
     <img
-      src={`/dados/${valor}.svg`}
-      alt={`Dado mostrando ${valor}`}
-      width={70}
-      height={70}
+      src={`/dice/dado-${valor}.svg`}
+      alt={`Dado com valor ${valor}`}
+      width={90}
+      height={90}
     />
   );
 }
