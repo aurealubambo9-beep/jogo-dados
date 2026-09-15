@@ -1,8 +1,12 @@
 export default function Dado({ valor }) {
+  const imagem = valor
+    ? `/dice/dado-${valor}.svg`
+    : "/dice/dado-vazio.svg";
+
   return (
     <img
-      src={`/dice/dado-${valor}.svg`}
-      alt={`Dado com valor ${valor}`}
+      src={imagem}
+      alt={valor ? `Dado com valor ${valor}` : "Dado vazio"}
       width={90}
       height={90}
     />
